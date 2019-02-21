@@ -1,0 +1,38 @@
+Establezca verdadero o falso en las siguientes sentencias:
+	Rest es un protocolo que permite la interoperabilidad (Falso)
+	Rest es una tecnología que está basada sobre el protocolo http (Verdadero)
+	SOAP es un protocolo que tiene el objetivo transferir mensajes entre aplicaciones distribuidas(Verdadero)
+	Los componentes de rest son nouns,Adjectives,Representations(Falso)
+	SOA es un protocolo de transferencia de mensajes entre aplicaciones distribuidas(Falso)
+Explique cada uno de los niveles de madurez de REST (Gloria REST)
+	nivel 0 :se HTTP como un protocolo de transporte para codificar 
+	nivel 1 : se introduce el recurso y cada recurso tiene su propio URI
+	nivel 2	: se usan los protocolos HTTP(get put delete post)
+	nivel 3 : se retornan enlaces que permiten al cliente descubrir operaciones y obtener referencias a otros recursos
+
+Cuales son los componentes del SOAP-ENVELOPE y para que sirven
+El sobre SOAP
+ <Header> opcional y un elemento <Body> obligatorio.
+La cabecera SOAP
+<Header> se utiliza para pasar información relacionada con la aplicación 
+El cuerpo SOAP
+<Body> que contiene información dirigida al destinatario final del mensaje
+El error SOAP
+<Fault> se utiliza para notificar errores
+
+Defina la diferencia de un estilo arquitectónico cliente servidor y un P2P
+	El estilo de arquitectura cliente servidor s una qruitectura la cual el cliente solicita el recurso y el cliente responde a ese recurso se basa en que se va a separar la abstracion del cliente y la del servidor para que asi muhcos clientes tengan acceso al recurso de ese servidor, dado esto se puede generar una escalabilidad la arquitectura
+	y la la arquitectura per 2 per es una arquitectura bidireccional la cual explica que no importa desde donde de acceda al recurso, en la red p2p algun per puede ser eliminado o sacado de la red per y esto no tiene relebancia para la arquitectura y es ahi donde se asegura disponibilidad y escalabilidad 
+
+Escriba un ejemplo de un programa P2P y explique por que es P2P
+	el programa se llama Gnutella el cual era una empresa que mandaba paquetes por la red, estas empresa usaba arquitectura p2p por que siempre podian tener cambios en la red y siempre se podian soicitar recursos tanto del clientre como el servidor, es por eso que ellos utilizaban esa arquitectura ya que p2p deja sacar per de la red sin ningun problema
+	y esto les daba una gran escalabilidad y disponibilidad a ala hora de comprar productos 
+
+Qué es WSDL y para que sirve?
+	web service description language es un servicio de marcado xml es cual sirve para crear servicios web services
+Explique que significa que un objeto sea Thread-Safety
+	un objeto thread safety es aquel objeto al cual se le garantiza que a la hora de que se ejecuta el programa y se ejecuntan los multiples hilos simultaneamente dicho programa se ejecute bien es decir que se cumpla la precondicion y la poscondion 
+
+Explique los tipos y las variables atómicas. 
+las variables atomaticas son aquellas variables que no necesitan ser syncronizadas y se puede garantizar su uso 
+los tipos son int void float long double etc.
