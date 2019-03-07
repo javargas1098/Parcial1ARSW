@@ -18,13 +18,13 @@ import edu.eci.arsw.Persistence.PersistenceException;
 
 public class GuidFinderPersitenceVolatileMemory implements GuidPersistence {
 
-	@Autowired
 	GuidFinder uuids;
-	List<UiResponse> responses=new LinkedList<>();
+	List<UiResponse> responses = new LinkedList<UiResponse>();
 
+	public GuidFinderPersitenceVolatileMemory() throws Exception {
+		uuids = new GuidFinder();
+	}
 
-	
-	
 	@Override
 	public List<UiResponse> getAll() throws PersistenceException {
 		return responses;
@@ -33,19 +33,10 @@ public class GuidFinderPersitenceVolatileMemory implements GuidPersistence {
 	@Override
 	public UiResponse consult(UiRequest guidToFind) throws PersistenceException {
 		// TODO Auto-generated method stub
-		UiResponse response = new UiResponse(uuids.countGuids(guidToFind.getRequest()), new Date(), guidToFind.getRequest());
+		UiResponse response = new UiResponse(uuids.countGuids(guidToFind.getRequest()), new Date(),
+				guidToFind.getRequest());
 		responses.add(response);
 		return response;
 	}
 
-//	@Override
-//	public UiRequest consult(UiRequest name) throws PersistenceException {
-//		UiResponse c =new UiResponse(fk.consult);
-//		
-//		if ((c = uids.get(name)) == null) {
-//			throw new PersistenceException("The given function to update does not exit");
-//		}
-//		return c;
-//
-//	}
 }

@@ -17,7 +17,7 @@ import org.springframework.stereotype.Component;
 
 import edu.eci.arsw.Model.UiResponse;
 
-@Component("guidFinder")
+//@Component("guidFinder")
 public class GuidFinder {
 	private static ArrayList<UiResponse> results;
 	private LinkedList<UUID> guids;
