@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @EnableAutoConfiguration
-@ComponentScan
+@ComponentScan(basePackages= {"edu.eci.arsw"})
 @SpringBootApplication
 public class GuidFinderApiApplication {
 

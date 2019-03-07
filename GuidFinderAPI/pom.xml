@@ -12,6 +12,7 @@
 	<groupId>edu.eci.arsw</groupId>
 	<artifactId>GuidFinderAPI</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<name>GuidFinderAPI</name>
 	<description>Demo project for Spring Boot</description>
 
@@ -30,6 +31,7 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
 	</dependencies>
 
 	<build>
